@@ -1,0 +1,239 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cyber-base {
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+header {
+    background: linear-gradient(90deg, #3a7bd5, #3a6073); 
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        display: none;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+        border: 1px solid red;
+    }
+}
+.image1 {
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+}
+.image1 {
+    width: 100%;
+    height: auto;
+}
+.create {
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+  
+}    
+.bio {
+    color: #ffa815;
+    text-align: left;
+    margin: 10px 10px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.bbb {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(90deg, #3a7bd5, #3a6073); 
+    padding: 10px;
+}
+.projects {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(90deg, #3a7bd5, #3a6073); 
+    padding: 10px;
+}
+.project {
+    display: grid; 
+     grid-template-columns: 1fr; 
+    gap: 12px; 
+    justify-items: center; 
+}
+
+.project img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) { 
+    .project {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+.contact {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(90deg, #3a7bd5, #3a6073); 
+    padding: 10px;
+}
+.contacts {
+    padding: 10px;
+    color: orange;
+}
+.body {
+   background: linear-gradient(#ff9d00, #ff9340, #ffbe95)
+}
+.social-icons img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3 ease;
+   padding: 10px;
+}
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: darkorange;
+}
+
+.submit-image-wrapper {
+    text-align: right; /* Align the submit button */
+}
+.footerpage {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(90deg, #3a7bd5, #3a6073); 
+    padding: 10px;
+     text-decoration: none;
+}
+.footer-container {
+    color: orange;
+}
+.footer-container h3 {
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+.about-us {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px
+    }
+.footer-container p {
+    line-height: 1.6;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
